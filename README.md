@@ -7,10 +7,10 @@ DI (Dependency Injection) - **Pattern**
 IoC Container - **Framework**   
 
 ## Scope of work:   
-**Problem:** Tightly Coupled Classes   
+**Problem:**     
 **Goal:** Loosely Coupled Classes   
    
- - [ ] Implement problem situation
+ - [*] Implement problem situation
  - [ ] Implement IoC using Factory Pattern
  - [ ] Implement DIP by creating abstraction
  - [ ] Implement DI
