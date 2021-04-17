@@ -1,4 +1,5 @@
 ﻿using System;
+using ioc.FactoryPattern;
 using ioc.Problem;
 
 namespace ioc
@@ -7,20 +8,31 @@ namespace ioc
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Problem logs: ");
+            Console.WriteLine("---------------------------------------");
             /* As far as I understand:
+            Problem:
             Class Flower doesn't work without Electricity and Lamp Classes.
             And if I want to change Lamp to another class (ex. Sun),
             that mean I need to modify Flower class 
             (which doesn't recommended by Open-Closed Principle)
 
-            Flow of program controled by me
-            inverse of control: me controled by program? ಠ╭╮ಠ
-
-            Flow controled by program
-            inverse: Program will be controled by flow
+            Also if I want to test Flower class with simulation of light (mock lamp)
+            I can't do this.
             */
             var myFlower = new Flower();
             myFlower.StartPhotosynthesis();
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Factory method logs:");
+            Console.WriteLine("---------------------------------------");
+
+            /* As far as I understand:
+            We pulled the water object out of the Rose class
+            That mean if I want to use mockWater, I can use WaterFactory for that
+            */
+            var myRoses = new Rose();
+            myRoses.StartGrowing();
         }
     }
 }

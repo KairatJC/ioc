@@ -13,10 +13,7 @@ namespace ioc.Problem
 
         /* As far as I understand:
         method StartPhotosynthesis depend of Lamp.LightOn method
-        and if Lamp.LightOn will be changed in future, I need to test what happend here.
-
-        Reason: "if I have 100 methods I need to test 100 times" sounds unconvincing.
-        because in real I haven't 100 methods. Maybe I'm wrong
+        and if Lamp.LightOn will be changed in future, I need to check what happend here.
         */
         public void StartPhotosynthesis()
         {
