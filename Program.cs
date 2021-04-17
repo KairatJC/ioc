@@ -1,4 +1,5 @@
 ﻿using System;
+using ioc.Absaction;
 using ioc.FactoryPattern;
 using ioc.Problem;
 
@@ -8,6 +9,7 @@ namespace ioc
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("---------------------------------------");
             Console.WriteLine("Problem logs: ");
             Console.WriteLine("---------------------------------------");
             /* As far as I understand:
@@ -24,7 +26,7 @@ namespace ioc
             myFlower.StartPhotosynthesis();
 
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("Factory method logs:");
+            Console.WriteLine("Fabric method logs:");
             Console.WriteLine("---------------------------------------");
 
             /* As far as I understand:
@@ -33,6 +35,19 @@ namespace ioc
             */
             var myRoses = new Rose();
             myRoses.StartGrowing();
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Add abstraction logs:");
+            Console.WriteLine("---------------------------------------");
+
+            /* As far as I understand:
+            I implemented Dependency Injection Principle:
+            High-level Sunflower not depend on Low-level Sun
+            Both depend on Interface
+            */
+
+            var myShinySunflower = new Sunflower();
+            myShinySunflower.Shining();
         }
     }
 }
