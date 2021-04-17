@@ -1,14 +1,14 @@
 using System;
 
-namespace ioc.Abstraction
+namespace ioc.DependencyInjection
 {
-    public class SunLight : ISunLight
+    public class Wind : IWind
     {
         // low-level module
         // Sunlower doesn't depend on this concrete Class
-        public int SunShine()
+        public int Woooo()
         {
-            Console.WriteLine("\n--=[ Shiny Sunny 彡ﾟ◉ω◉ )つー☆* \n");
+            Console.WriteLine("\n--=[ Wind do wooo •·.·¯`·.·•\n");
             var random = new Random();
             return random.Next(10);
         }

@@ -1,4 +1,4 @@
-namespace ioc.Absaction
+namespace ioc.Abstraction
 {
     public class SunFactory
     {
