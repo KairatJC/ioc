@@ -1,4 +1,3 @@
-# DRAFT
 # My attempt at understanding what is IoC, DIP, DI
 I used this [resource](https://www.tutorialsteacher.com/ioc/) for learning.
 
@@ -15,17 +14,13 @@ IoC Container - **Framework**
  - [x] Implement IoC using Factory Pattern
  - [x] Implement DIP by creating abstraction
  - [x] Implement DI
- - [x] IoC Container
 
 ## What is Done:
 1. Simulated problem when we need to use IoC.
-2. Fabric Method for creating objects implemented.
-3. DIP implemented by using Interface.
-4. DI implemented using Constructor injection.
+2. Implemented the Fabric method for creating objects.
+3. DIP implemented using the Interface.
+4. DI implemented using the Constructor injection.
 
-## Factory method:
-Can read [here](https://refactoring.guru/design-patterns/factory-method)
-   
 ## Dependency Inversion Principle
 DIP is one of the SOLID object-oriented principle   
    
@@ -44,11 +39,12 @@ Three ways to inject:
 - **Property**
 - **Method**
    
-**Basic idea:** Creating dependent class outside dependency class
+**Basic idea:** Creating an object of dependency class outside the dependent class
 
 ## IoC Container:
 [The best explanation](https://stackoverflow.com/a/1532254) why I need to use IoC Containers
    
 ## Additional Materials:
-- [About DI LifeCycle](https://dotnetcoretutorials.com/2017/03/25/net-core-dependency-injection-lifetimes-explained/)
+- About DI [LifeCycle](https://dotnetcoretutorials.com/2017/03/25/net-core-dependency-injection-lifetimes-explained/)
 - DI container from [Microsoft](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0)
+- [Factory](https://refactoring.guru/design-patterns/factory-method) Pattern
