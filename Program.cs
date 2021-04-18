@@ -2,6 +2,7 @@
 using ioc.Abstraction;
 using ioc.FactoryPattern;
 using ioc.Problem;
+using ioc.DependencyInjection;
 
 namespace ioc
 {
@@ -48,6 +49,17 @@ namespace ioc
 
             var myShinySunflower = new Sunflower();
             myShinySunflower.Shining();
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Use Injector class:");
+            Console.WriteLine("---------------------------------------");
+
+            /* As far as I understand:
+            Injector class decline coupling between Poppy (Some Business Logic) and Wind (Data Source)
+            */
+
+            var myLovelyPoppy = new PoppyService();
+            myLovelyPoppy.Disperse();
         }
     }
 }

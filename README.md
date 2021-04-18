@@ -13,7 +13,7 @@ IoC Container - **Framework**
  - [x] Implement problem situation
  - [x] Implement IoC using Factory Pattern
  - [x] Implement DIP by creating abstraction
- - [ ] Implement DI
+ - [x] Implement DI
  - [ ] Use IoC Container
 
 ## What is Done:
@@ -42,3 +42,4 @@ Three ways to inject:
 - **Property**
 - **Method**
    
+**Basic idea:** Creating dependent class outside dependency class
