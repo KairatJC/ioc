@@ -1,6 +1,6 @@
 using System;
 
-namespace ioc.FactoryPattern
+namespace ioc._02_FabricMethod
 {
     public class Water
     {

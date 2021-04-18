@@ -1,8 +1,8 @@
 ﻿using System;
-using ioc.Abstraction;
-using ioc.FactoryPattern;
-using ioc.Problem;
-using ioc.DependencyInjection;
+using ioc._01_ProblemSituation;
+using ioc._02_FabricMethod;
+using ioc._03_Abstraction;
+using ioc._04_DependecyInjection;
 
 namespace ioc
 {

@@ -1,6 +1,6 @@
 using System;
 
-namespace ioc.DependencyInjection
+namespace ioc._04_DependecyInjection
 {
     public class Poppy
     {

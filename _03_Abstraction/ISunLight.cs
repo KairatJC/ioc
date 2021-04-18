@@ -1,4 +1,4 @@
-namespace ioc.Abstraction
+namespace ioc._03_Abstraction
 {
     public interface ISunLight
     {

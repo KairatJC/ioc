@@ -1,6 +1,6 @@
 using System;
 
-namespace ioc.Problem
+namespace ioc._01_ProblemSituation
 {
     public class Electricity
     {
